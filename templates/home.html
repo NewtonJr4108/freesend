@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+
+    <title>Welcome {{un}}</title>
+
+    <style>
+        .bottom{
+
+        text-align: center;
+        position: absolute;
+        background-color: grey;
+        bottom: 0px;
+        align-items: center;
+        width: 100%;
+
+
+
+    }
+
+        #log{
+            margin-left: auto; 
+            margin-right: 0;
+
+        }
+    </style>
+</head>
+
+<header>
+    <h1>
+        <u>
+            Welcome, {{  un  }}
+        </u>
+
+    </h1>
+
+    <div id="log">
+        <h3>
+            <a href="{{url_for('logout')}}">logout</a>
+        </h3>    
+    </div>
+</header>
+
+<body>
+
+    <a href="{{url_for('send')}}">Upload and Send Files</a>
+<br>
+<br>
+    <a href="{{url_for('download')}}">View and Download Recieved Files</a>
+    
+</body>
+
+<div class="bottom">
+
+    <footer>
+        <p style="text-align: center"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Matthew Anto All Rights Reserved</p>
+    
+    </footer>
+    
+
+
+</div>
+
+</html>

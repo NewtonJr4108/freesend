@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://unpkg.com/98.css" />
+
+
+
+<style>
+    @font-face {
+        font-family: title;
+        src: url( '{{font}}' );
+
+    }
+
+    #c2{
+    float:right;
+}​
+
+    
+
+h2{
+        font-family: title;
+        color: rgb(12, 116, 160);
+        
+    }
+
+    
+
+    h3{
+        font-family: title;
+        color: rgb(12, 116, 160);
+        
+    }
+    footer{
+
+        background-color: grey;
+        vertical-align: bottom;
+        font-family: title;
+    }
+
+    .left{
+
+        float: left;
+        position: relative;
+        left: 0;
+        top: 0%;
+    }
+
+    .bottom{
+
+        text-align: center;
+        position: absolute;
+        background-color: grey;
+        bottom: 0px;
+        align-items: center;
+        width: 100%;
+        
+
+
+    }
+    img{
+
+        left: 0;
+        top: 0;
+    }
+
+
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freesend - Unlimited Secure File Sending</title>
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+<div class="left">
+
+    <img src="{{url_for('static', filename='favicon.png')}}" alt="title" height="200" width="400">
+
+
+</div>
+
+    <h2>
+        <center>
+            Unlimited, Free, Fast, Secure
+        </center>
+    </h2>
+    <br>
+    <br>
+    <h3>
+        <center>
+    
+            Send files directly to other users without data limits and with secure encryption.
+        </center>
+    </h3>
+
+
+
+</head>
+
+<body style="margin: 0;">
+
+    <div id="c2">
+
+        <a href="{{url_for('login')}}">
+            <button>
+                Login
+            </button>
+        
+        </a>
+            <br>
+            <br>
+            <a href="{{url_for('signup')}}">
+                <button>
+                    Sign Up
+                </button>
+            </a>
+        
+    </div>
+
+    
+</body>
+
+
+<div class="bottom">
+
+    <footer>
+        <p style="text-align: center"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Matthew Anto All Rights Reserved</p>
+    
+    </footer>
+    
+
+
+</div>
+</html>
+
+
